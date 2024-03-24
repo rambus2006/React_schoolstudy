@@ -1,0 +1,7 @@
+<MyComponent value1 = "asdf" hello={1234}/>
+props.value1
+props.hello
+
+const {value1,hello } =props
+function MyComponent({value1, hello}) //객체 비구조화 할당(=객체를 풀어해치기)
+

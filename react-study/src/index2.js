@@ -1,0 +1,1 @@
+import "./component-basic/props-basic-3";
