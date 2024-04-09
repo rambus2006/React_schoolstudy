@@ -6,4 +6,7 @@
 // import "./practice/ex02"
 // import "./component-intermediate/state-study-with-inner-object"
 //import "./component-intermediate/state-study-1"
-import "./component-intermediate/manipulate-list.js"
+// import "./component-intermediate/manipulate-list.js"
+// import "./component-intermediate/todo-app-demo"
+// import "./component-intermediate/comment"
+import "./component-intermediate/comment_noticeboard"
