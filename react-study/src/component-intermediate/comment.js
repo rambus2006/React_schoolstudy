@@ -3,6 +3,7 @@ import ReactDOM  from 'react-dom/client';
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
 function CommentInput({handleCommentAdd}){
+    //1. input의 useState 정의 
     const [input, setInput] = useState("")
     const handleOnChange = (e) => setInput(e.target.value)
     
