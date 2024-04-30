@@ -17,4 +17,6 @@
 //import "./practice/02_Props/Rectangle"
 //import "./practice/02_Props/Weather"
 //import "./practice/02_Props/Repeater"
-import "./practice/02_Props/"
+//import "./practice/02_Props/ColorList"
+import "./practice/02_Props/Rating"
+//import "./practice/02_Props/Alerter"
