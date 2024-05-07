@@ -4,6 +4,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
 
 // 함수 인자값을 전달받으면서 비구조화 할당 진행
 const PersonProfile = function({ name, age, gender, profile, highlight }) {
+//
   return (
       <div className='person' style={highlight ? {color: 'red'} : null}>
           <h1>Profile</h1>
@@ -29,13 +30,16 @@ const PersonProfileWithUserObject = function(props) {
     )
 }
 
+//1. App 컴포넌트 선언
 const App = function(props) {
+    
     const anotherPerson = {
         name: 'Jane',
         age: 28,
         gender: 'female',
         profile: 'https://randomuser.me/api/portraits/women/75.jpg'
     }
+    // person 객체 선언 
     const person = {
       name: 'Jane',
       age: 28,
@@ -45,6 +49,7 @@ const App = function(props) {
     const { name, gender, ...rest } = anotherPerson
     console.log(rest) // { age: 28, profile: '...' }
 
+    // 리턴 
     return (
         <div id='props-basic'>
             {/* 실용 사례 */}

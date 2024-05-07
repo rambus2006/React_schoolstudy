@@ -25,7 +25,7 @@ function conditionalRender(age) {
     }
 }
 
-// JSX 내부에서는 if, else 구문 사용이 불가능하므로 삼항 연산자를 사용하여 조건부 렌더링을 수행
+// JSX 내부(분홍색 중괄호)에서는 if, else 구문 사용이 불가능하므로 삼항 연산자를 사용하여 조건부 렌더링을 수행
 const age = 20
 const conditionalElement = (
     <>{age >= 20 ? <div>성인</div> : <div>미성년자</div>}</>

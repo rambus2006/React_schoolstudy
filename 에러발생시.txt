@@ -1,1 +1,2 @@
-git config --global core.autocrlf true
+warning: in the working copy of 'react-study/src/index.js', LF will be replaced by CRLF the next time Git touches it
+$git config --global core.autocrlf true
