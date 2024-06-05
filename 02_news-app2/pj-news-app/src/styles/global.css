@@ -1,0 +1,10 @@
+/* 글로벌로 주는 css는 전체 적용되기 때문에 import 로 적용시켜야 한다.  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eee;
+}
+/* 여기까지 하면 배경이 회색,margin과 padding이 없다.  */
