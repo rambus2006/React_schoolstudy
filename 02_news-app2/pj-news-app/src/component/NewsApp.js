@@ -22,6 +22,12 @@ function NewsApp(props){
         },2000)
     },[])
 
+    useEffect(()=>{
+        fetch("/api/users")
+            .then(res=>res.json())
+            .then(json => console.log(json))
+    },[])
+
     // 데이터를 로딩중일 때 실행되는 조건문이다. 
     if(loading) return <h1>데이터를 불러오는 중입니다...</h1>
     // NewsApp_news_app_$sldjk 이런식이기 때문에 스타일을 적용할 때 다음과 같이 해줘야 한다. 
