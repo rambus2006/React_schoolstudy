@@ -16,6 +16,13 @@ const useCounterStore = create(set =>({
     //이전 값을 참조하지 않고 유지 하는 함수 
     set:(value)=>{
         set({count:value}) //이렇게 하면 객체 안에 들어있는 함수가 사라진다. 
+    },
+    //비동기 함수 추가 
+    incrementAsync: async () =>{
+        // sleep 함수 흉내내기
+        await new Promise((resolve) => setTimeout(resolve, 1000))
+        // 상태 변경
+        set(state => ({ ...state, count: state.count + 1 }))
     }
 })) //보라색 부분이 객체 
 export default useCounterStore
